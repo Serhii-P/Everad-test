@@ -1,7 +1,15 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+
+@import "./components/header";
+@import "./components/_header-content";
+@import "./components/main-content";
+@import "./components/_form";
+@import "./components/footer";
 
 body {
-  background: $c-gray;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  width: 2648px;
 }

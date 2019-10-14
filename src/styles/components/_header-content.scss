@@ -1,0 +1,92 @@
+.header-content {
+  width: 405px;
+  position: relative;
+
+  &__title {
+    width: 310px;
+    font-size: 44px;
+    line-height: 44px;
+    color: $c-title;
+    font-weight: 900;
+
+    &--underline {
+      font-size: 34px;
+      display: block;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 24px;
+    color: #444;
+    font-weight: 400;
+    padding: 3px 0 0 79px;
+  }
+
+  &__img {
+    position: absolute;
+  }
+}
+
+.orange {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    // top: 0;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    background-color: $c-orange;
+    width: 100%;
+  }
+}
+
+.green {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    background-color: $c-green;
+    width: 100%;
+  }
+}
+
+.text-middle__block {
+  margin: 12px 0;
+  display: inline-block;
+  width: 300px;
+}
+
+.orange-small {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: $c-orange;
+    width: 100%;
+  }
+}
+
+.green-small {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: $c-green;
+    width: 100%;
+  }
+}

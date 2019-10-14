@@ -1,0 +1,148 @@
+.form {
+  position: relative;
+  height: 560px;
+  margin: -39px 0 0 -39px;
+
+  &-frame {
+    position: absolute;
+    // z-index: -1;
+  }
+
+  &-delivery {
+    position: absolute;
+    display: flex;
+    left: 117px;
+    top: 45px;
+
+    &__text {
+      line-height: 18px;
+      color: $c-light-sm;
+      margin-left: 10px;
+    }
+  }
+
+  &-content {
+    width: 240px;
+    position: absolute;
+    top: 90px;
+    left: 48px;
+
+    &__title {
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 400;
+      text-align: center;
+      width: 186px;
+      margin-bottom: 10px;
+      margin-left: 37px;
+      // margin: 25px 0 0 37px
+
+      &--orange {
+        color: $c-orange;
+      }
+    }
+  }
+
+  &-price {
+    margin-left: 28px;
+
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+      margin: 0;
+      color: $c-light;
+
+      & strong {
+        color: #000;
+        margin-left: 37px;
+      }
+    }
+
+    &__block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: -6px;
+    }
+  }
+
+  &-footer {
+    font-size: 18px;
+    line-height: 18px;
+    color: #333;
+    text-align: center;
+    margin: 7px 0 17px;
+  }
+
+  &-guard {
+    display: flex;
+    border-radius: 10px;
+    background-color: $c-light-grey;
+    width: 257px;
+
+    &__text {
+      font-size: 14px;
+      line-height: 17px;
+      color: $c-light;
+    }
+
+    & img {
+      margin: 0 10px 0 24px;
+    }
+  }
+}
+
+.input-field {
+  width: 220px;
+  height: 65px;
+  border-radius: 32px;
+  background-color: $c-light-grey;
+  border: none;
+  margin: 10px 0 0 15px;
+}
+
+.user-name {
+  background-image: url("../../images/user-name.svg");
+  background-position: 23px 20px;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $c-green;
+  }
+}
+
+.user-phone {
+  background-image: url("../../images/user-phone.svg");
+  background-position: 23px 20px;
+  background-repeat: no-repeat;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $c-green;
+  }
+}
+
+.input-field[placeholder] {
+  text-indent: 55px;
+  font-size: 16px;
+}
+
+.form-order {
+
+  & img {
+    margin: 12px 0 10px 15px;
+  }
+}
+
+.green-text {
+  color: $c-green;
+}
+
+@media screen and (max-width: 580px) {
+  .form {
+    margin: -6px 0 0 -39px;
+    width: 100%;
+  }
+}

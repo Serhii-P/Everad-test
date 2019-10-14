@@ -1,0 +1,173 @@
+.header {
+  width: 2648px;
+
+  &-bg__image {
+    margin-top: -3px;
+  }
+
+  &-background {
+    padding-left: 350px;
+  }
+
+  &-top {
+    height: 66px;
+    width: 975px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0 0 909px;
+
+    &__block {
+      display: flex;
+
+      &--text {
+        margin-left: 10px;
+        font-size: 16px;
+        line-height: 18px;
+        color: $c-light;
+        font-weight: 400;
+        font-style: italic;
+      }
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 1217px;
+  }
+}
+
+.top-panacea {
+  margin-left: 80px;
+  width: 225px;
+}
+
+.top-name--text {
+  font-size: 22px;
+  color: $c-title;
+  font-weight: 900;
+  margin-left: 20px;
+}
+
+.top-dermatologist {
+  margin-left: 35px;
+  width: 163px;
+}
+
+.top-clients {
+  margin-left: 35px;
+  width: 222px;
+}
+
+.healthy-legs {
+  position: absolute;
+  z-index: 3;
+  top: -230px;
+  left: 450px;
+}
+
+.micocin {
+  position: absolute;
+  z-index: 5;
+  top: 472px;
+  left: 619px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+
+    &-bg__image {
+      margin-left: -360px;
+    }
+
+    &-top {
+      margin: 10px 0 0 559px;
+    }
+
+    &-wrapper {
+      left: 892px;
+    }
+  }
+
+  .healthy-legs {
+    left: 117px;
+  }
+
+  .micocin {
+    left: 294px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header-background {
+    margin-left: -507px;
+  }
+
+  .micocin {
+    left: 124px;
+  }
+
+  .healthy-legs {
+    left: -53px;
+  }
+
+  .header {
+
+    &-top {
+      margin: 10px 0 0 423px;
+    }
+
+    &-wrapper {
+      left: 704px;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .top-panacea {
+    margin-left: 30px;
+  }
+
+  .top-dermatologist,
+  .top-clients,
+  .top-panacea {
+    display: none;
+  }
+
+  .healthy-legs {
+    display: none;
+  }
+
+  .micocin {
+    top: 261px;
+    left: 16px;
+  }
+
+  .header-bg__image {
+    margin-left: -515px;
+  }
+
+  .header-top {
+    margin: 10px 0 0 36px;
+  }
+
+  .header-wrapper {
+    position: relative;
+    justify-content: normal;
+    top: 107px;
+    left: 162px;
+    flex-wrap: wrap;
+  }
+
+  .header-background {
+    margin-left: -300px;
+    margin-top: -112px;
+  }
+
+  .form {
+    margin: -39px 0 0 7px;
+  }
+}
